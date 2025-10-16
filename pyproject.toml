@@ -10,3 +10,4 @@ build-backend = "mesonpy"
 name = "numpy-deadlock-test"
 requires-python = ">=3.9.0"
 version = "0.0.1"
+dependencies = ["numpy"]

@@ -1,0 +1,1 @@
+run with e.g. `uv run --python=3.11 python -c "import numpy_deadlock_test`
