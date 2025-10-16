@@ -68,7 +68,7 @@ PyMODINIT_FUNC PyInit_numpy_deadlock_test(void) {
     sleep(1);  // let thread B obtain lock
     
     PyGILState_STATE state = PyGILState_Ensure();
-    printf("A: acquired GIL, now trying to get PyThread lock\n");
+    printf("A: acquired GIL, now trying to acquire string allocator\n");
     fflush(stdout);
     allocator = NpyString_acquire_allocator(dt_instance);
     printf("A: acquired lock (no deadlock)\n");
